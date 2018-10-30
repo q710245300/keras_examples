@@ -209,4 +209,5 @@ x_test = pad_sequences(sequences, maxlen)
 y_test = np.asarray(labels)
 
 model.load_weights('pre_trained_glove_model.h5')
-model.evaluate(x_test, y_test)
+results = model.evaluate(x_test, y_test)
+print(results)
